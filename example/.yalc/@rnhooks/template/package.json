@@ -1,0 +1,51 @@
+{
+  "name": "@rnhooks/template",
+  "version": "0.0.1-6e1edee3",
+  "description": "A template for React Native Hooks Projects",
+  "main": "dist/react-native-hooks-template.cjs.js",
+  "jsnext:main": "dist/react-native-hooks-template.esm.js",
+  "module": "dist/react-native-hooks-template.esm.js",
+  "scripts": {
+    "build": "rollup -c",
+    "test": "jest",
+    "test:watch": "npm run test -- --watch",
+    "test:coverage": "jest --coverage",
+    "yalc": "npm run build && yalc push"
+  },
+  "files": [
+    "dist"
+  ],
+  "keywords": [
+    "react-native",
+    "hooks",
+    "react-native-hooks",
+    "react-native-hooks-template"
+  ],
+  "author": {
+    "name": "Pritish Vaidya",
+    "email": "pritishvaidya94@gmail.com",
+    "url": "pritishvaidya.com"
+  },
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/react-native-hooks/template"
+  },
+  "bugs": {
+    "url": "https://github.com/react-native-hooks/template#issues"
+  },
+  "homepage": "https://github.com/react-native-hooks/template#readme",
+  "peerDependencies": {
+    "react": ">16.8.0",
+    "react-native": ">0.59.0"
+  },
+  "jest": {
+    "preset": "react-native",
+    "transform": {
+      "^.+\\.js$": "<rootDir>/node_modules/react-native/jest/preprocessor.js"
+    },
+    "modulePathIgnorePatterns": [
+      "<rootDir>/example/"
+    ]
+  }
+}
