@@ -1,12 +1,8 @@
 {
   "version": "v1",
   "packages": {
-    "@rnhooks/template": {
-      "signature": "6e1edee38025a6e62bba29e139aa7251",
-      "file": true
-    },
     "@rnhooks/network-status": {
-      "signature": "6ee1b9630dd2bf751d60d93f06ae9b84",
+      "signature": "8204450172207afba5b9a4a5b4a397bd",
       "file": true
     }
   }

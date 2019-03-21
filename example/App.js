@@ -1,17 +1,6 @@
 import React from 'react';
-import { StyleSheet, Text, View} from 'react-native';
-import useNetworkStatus from '@rnhooks/network-status'
-
-function App () {
-  let {type, effectiveType} = useNetworkStatus();
-
-  return (
-    <View style={styles.container}>
-      <Text style={styles.type}>{`Type: ${type}`}</Text>
-      <Text style={styles.effectiveType}>{`Effective Type: ${effectiveType}`}</Text>
-    </View>
-  )
-}
+import { StyleSheet, Text, View } from 'react-native';
+import useNetworkStatus from '@rnhooks/network-status';
 
 const styles = StyleSheet.create({
   container: {
@@ -22,8 +11,19 @@ const styles = StyleSheet.create({
   },
   type: {
     margin: 20,
-    fontSize: 20
-  }
+    fontSize: 20,
+  },
 });
 
-export default App
+function App() {
+  const { type, effectiveType } = useNetworkStatus();
+
+  return (
+    <View style={styles.container}>
+      <Text style={styles.type}>{`Type: ${type}`}</Text>
+      <Text style={styles.effectiveType}>{`Effective Type: ${effectiveType}`}</Text>
+    </View>
+  );
+}
+
+export default App;
